@@ -165,7 +165,7 @@ function getBook(bId, bookLink){
           <img src="${imgSrc}">    
             <ul>
       <li> <strong> Subtitle:</strong>${bookInf.subtitle}</li><hr>
-      <li><strong>Online Reading:</strong> <p class="bg-new" id="link">Online Reading Is Available Here!</p></li><hr>
+      <li><strong>Online Reading:</strong> <p class="bg-new" id="link">Online sample Is Available Here!</p></li><hr>
       <li><strong> Description:</strong> ${bookInf.description}</li><hr>
       <li> <strong> Category:</strong> ${bookInf.categories}</li><hr>
       <li> <strong>Author:</strong> ${bookInf.authors}</li><hr>
@@ -193,7 +193,7 @@ function inAppbrowser(){
     if(bookD.accessInfo.pdf.isAvailable == false){
          console.log(bookD.accessInfo.pdf.isAvailable);
     $$('#link').css('background', 'gray');
-    $$('#link').html('Online Reading is Not Available');
+    $$('#link').html('Online sample is Not Available');
     let jbroswer = window.open("#", '_blank', options); 
         }
     
